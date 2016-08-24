@@ -1,0 +1,35 @@
+<!-- index.html -->
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Vue</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+  body {
+      margin: 0;
+      padding: 0;
+   }
+ textarea{
+      width:49%;
+      padding: 0;
+      margin:0;
+  }
+  </style>
+</head>
+<body>
+    <div id="events">
+        <pre>{{error}}</pre>
+        <textarea v-model="input">{{input}}</textarea>
+        <textarea>{{output}}</textarea>
+    </div>
+  <!-- JS -->
+  <script src="node_modules/vue/dist/vue.js"></script>
+  <script src="node_modules/vue-resource/dist/vue-resource.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.33/browser.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
